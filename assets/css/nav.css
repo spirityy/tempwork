@@ -1,0 +1,24 @@
+header {
+  color: white;
+  text-align: center;
+  display: table;
+  font-size: 36px;
+  width: 100%;
+  height: 83px;
+  line-height: 83px;
+  background: #3397da;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+  header:before, header:after {
+    content: "";
+    display: table; }
+  header:after {
+    clear: both; }
+  header .side-icon {
+    position: absolute;
+    left: 33px;
+    top: 24px;
+    width: 32px;
+    height: 32px;
+    background: url(../img/sprite.png) no-repeat 0 0; }

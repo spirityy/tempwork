@@ -1,0 +1,11 @@
+{
+  "name": "msd",
+  "version": "0.0.1",
+  "description": "weixin web",
+  "main": "list.html",
+  "keywords": [
+    "weixin"
+  ],
+  "author": "sp",
+  "license": "MIT"
+}

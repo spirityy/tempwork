@@ -1,0 +1,30 @@
+@import 'functions';
+
+$nav-height:83px;
+$nav-bg:$themecolor;
+$nav-container-bg:#ccc;
+$font-color:#fff;
+$font-size:36px;
+
+header{
+    color:$font-color;
+    text-align:center;
+    display:table;
+    font-size:$font-size;
+    width:100%;
+    height:$nav-height;
+    line-height:$nav-height;
+    background:$nav-bg;
+    margin:0;
+    padding:0;
+    position:relative;
+    @include clearfix();
+    .side-icon{
+        position:absolute;
+        left:33px;
+        top:24px;
+        width:32px;
+        height:32px;
+        background:url(../img/sprite.png) no-repeat 0 0;
+    }
+}
