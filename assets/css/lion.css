@@ -455,8 +455,7 @@ header {
   line-height: 83px;
   background: #3397da;
   margin: 0;
-  padding: 0;
-  position: relative; }
+  padding: 0; }
   header:before, header:after {
     content: "";
     display: table; }
