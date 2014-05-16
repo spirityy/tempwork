@@ -12,7 +12,7 @@ a {
   text-decoration: none; }
   a:hover, a:focus {
     color: red;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 img {
   vertical-align: middle;

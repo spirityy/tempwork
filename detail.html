@@ -9,21 +9,54 @@
 <body>
 
     <aside>
+        <form action="">            
             <div class="aside-hd">
                 <div class="logo">
-                     
+                    <img src="./assets/img/logo.png" alt="">
+                </div> 
+                <div class="aside-title">
+                    MSD微招聘
                 </div>
             </div>
 
             <div class="aside-main">
                 <div class="aside-search">
-                    <input type="text" name="search-job"/>
+                    <input type="text" name="search-job" placeholder="输入职位关键词"/>
+                    <button type="submit" class="search-btn"></button>
                 </div>
                 <div class="aside-selectarea">
-                    
+                        <div class="area-selected">
+                            <i class="up-arrow"></i>
+                            <h5>工作地点</h5>
+                            <p class="sub">请选择</p>
+                        </div>
+                        <div class="area-selected-options">
+                            <ul class="p-options">
+                                <li><a href="">热门</a></li> 
+                                <li class="active"><a href="">北京</a></li> 
+                                <li><a href="">上海</a></li> 
+                            </ul>
+                            <ul class="c-options">
+                                {{#each citys}}
+                                <li><a href="">{{city_name}}</a></li> 
+                                {{/each}}
+                            </ul>
+                        </div>
+                        <div class="jobcat-selected">
+                            <i class="up-arrow"></i>
+                            <h5>工作类别</h5>
+                            <p class="sub">请选择</p>
+                             
+                        </div>
+                        <ul class="jobcat-selected-options">
+                            <li><a href="">互联网</a></li>
+                            <li><a href="">互联网</a></li>
+                            <li><a href="">互联网</a></li>
+                            <li><a href="">互联网</a></li>
+                        </ul>
                 </div>
             </div>
-
+        </form>
     </aside>
 
     <div class="main">
@@ -46,20 +79,20 @@
             <div class="job-desc">
                 <dl>
                     <dt class="themecolor">职位描述：</dt>
-                    <dd>根据公司发展战略，建立和完善培训制度，全面建立并不断优化公司培训体系和流程；</dd>
-                    <dd>基于公司年度目标，通过精准培训需求分析，制定年度培训计划，带领团队，组织并推动各项培训项目的实施；</dd>
-                    <dd>整合和调动培训资源，拓展培训渠道，与业务部门沟通、探讨并开发培训课程。</dd>
+                    <dd><i></i>根据公司发展战略，建立和完善培训制度，全面建立并不断优化公司培训体系和流程；</dd>
+                    <dd><i></i>基于公司年度目标，通过精准培训需求分析，制定年度培训计划，带领团队，组织并推动各项培训项目的实施；</dd>
+                    <dd><i></i>整合和调动培训资源，拓展培训渠道，与业务部门沟通、探讨并开发培训课程。</dd>
                 </dl> 
             </div>
 
             <div class="job-need">
                 <dl>
                     <dt class="themecolor">任职要求：</dt>
-                    <dd>具备制药企业销售管理经验和培训工作经验;</dd>
-                    <dd>对于企业培训体系搭建和整合培训资源有清晰的认识，能够组织进行课程开发与编写；</dd>
-                    <dd>优秀的辅导能力、授课技巧与演讲能力;</dd>
-                    <dd>具有很强的协调、高效沟通技巧和影响力；</dd>
-                    <dd>8年以上销售培训工作经验，5年以上扎实的销售培训管理经验。</dd>
+                    <dd><i></i>具备制药企业销售管理经验和培训工作经验;</dd>
+                    <dd><i></i>对于企业培训体系搭建和整合培训资源有清晰的认识，能够组织进行课程开发与编写；</dd>
+                    <dd><i></i>优秀的辅导能力、授课技巧与演讲能力;</dd>
+                    <dd><i></i>具有很强的协调、高效沟通技巧和影响力；</dd>
+                    <dd><i></i>8年以上销售培训工作经验，5年以上扎实的销售培训管理经验。</dd>
                 </dl> 
             </div>
 
@@ -73,7 +106,8 @@
     </div>
 
     <script src="http://127.0.0.1:8000/_/js/reloader.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/handlebars-v1.3.0.js"></script>
     <script src="./assets/js/global.js"></script>
 
 </body>

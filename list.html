@@ -1,78 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>list</title>
-    <link rel="stylesheet" href="./assets/css/lion.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+<meta charset="UTF-8">
+<title>list</title>
+<link rel="stylesheet" href="./assets/css/lion.css">
+<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
-    <aside>
-        kdsjalkjdasjdljsadjaslkd
-        djkslajdlksajkdjsakjdlsajlkdjald
-    </aside>
+<aside>
+    <form action="">            
+        <div class="aside-hd">
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="">
+            </div> 
+            <div class="aside-title">
+                MSD微招聘
+            </div>
+        </div>
 
-    <div class="main">
-        <header>
-            <a href="javascript:void(0);" class="side-icon"></a>
-            近期热点招聘
-        </header>
+        <div class="aside-main">
+            <div class="aside-search">
+                <input type="text" name="search-job" placeholder="输入职位关键词"/>
+                <button type="submit" class="search-btn"></button>
+            </div>
+            <div class="aside-selectarea">
+                <div class="area-selected">
+                    <i class="up-arrow"></i>
+                    <h5>工作地点</h5>
+                    <p class="sub">请选择</p>
+                </div>
+                <div class="area-selected-options">
+                    <ul class="p-options">
+                        <li><a href="">热门</a></li> 
+                        <li class="active"><a href="">北京</a></li> 
+                        <li><a href="">上海</a></li> 
+                    </ul>
+                    <ul class="c-options">
+                        {{#each citys}}
+                        <li><a href="">{{city_name}}</a></li> 
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="jobcat-selected">
+                    <i class="up-arrow"></i>
+                    <h5>工作类别</h5>
+                    <p class="sub">请选择</p>
 
-        <section>
-            <ul class="main-list">
-                <li>
-                    <a href="">
-                        <div class="list-item">
-                            <div class="item-hd">
-                                <h3>库存管理员</h3>
-                                <i class="detail"></i>
-                            </div>
-                            <div class="item-options">
-                                <ul>
-                                    <li class="addr-icon">地点：扬州</li>
-                                    <li class="people-icon">人数：若干</li>
-                                    <li class="date-icon">日期：04-28</li>
-                                </ul>
-                            </div>
-                            <div class="item-desc">
-                                工作职责：致力于通过专业的产品推广和学术交流，为医生提供具有价值的产品和治疗领域信息...
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="list-item">
-                            <div class="item-hd">
-                                <h3>库存管理员</h3> 
-                                <i class="detail"></i>
-                            </div>
-                            <div class="item-options">
-                                <ul>
-                                    <li class="addr-icon">地点：扬州</li>
-                                    <li class="people-icon">人数：若干</li>
-                                    <li class="date-icon">日期：04-28</li>
-                                </ul>
-                            </div>
-                            <div class="item-desc">
-                                工作职责：致力于通过专业的产品推广和学术交流，为医生提供具有价值的产品和治疗领域信息...
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </section>
+                </div>
+                <ul class="jobcat-selected-options">
+                    <li><a href="">互联网</a></li>
+                    <li><a href="">互联网</a></li>
+                    <li><a href="">互联网</a></li>
+                    <li><a href="">互联网</a></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</aside>
 
 
-        <section class="more">
-            <a href="">显示更多</a>
-        </section>
-    </div>
 
-    <script src="http://127.0.0.1:8000/_/js/reloader.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script src="./assets/js/global.js"></script>
+<div class="main">
+    <header>
+        <a href="javascript:void(0);" class="side-icon"></a>
+        近期热点招聘
+    </header>
+
+    <section>
+        <ul class="main-list">
+            <li>
+            <a href="">
+                <div class="list-item">
+                    <div class="item-hd">
+                        <h3>库存管理员</h3>
+                        <i class="detail"></i>
+                    </div>
+                    <div class="item-options">
+                        <ul>
+                            <li class="addr-icon">地点：扬州</li>
+                            <li class="people-icon">人数：若干</li>
+                            <li class="date-icon">日期：04-28</li>
+                        </ul>
+                    </div>
+                    <div class="item-desc">
+                        工作职责：致力于通过专业的产品推广和学术交流，为医生提供具有价值的产品和治疗领域信息...
+                    </div>
+                </div>
+            </a>
+            </li>
+            <li>
+            <a href="">
+                <div class="list-item">
+                    <div class="item-hd">
+                        <h3>库存管理员</h3> 
+                        <i class="detail"></i>
+                    </div>
+                    <div class="item-options">
+                        <ul>
+                            <li class="addr-icon">地点：扬州</li>
+                            <li class="people-icon">人数：若干</li>
+                            <li class="date-icon">日期：04-28</li>
+                        </ul>
+                    </div>
+                    <div class="item-desc">
+                        工作职责：致力于通过专业的产品推广和学术交流，为医生提供具有价值的产品和治疗领域信息...
+                    </div>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section>
+
+
+    <section class="more">
+        <a href="">显示更多</a>
+    </section>
+</div>
+
+<script src="http://127.0.0.1:8000/_/js/reloader.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/handlebars-v1.3.0.js"></script>
+<script src="./assets/js/global.js"></script>
 
 </body>
 </html>
