@@ -7,7 +7,7 @@
 
         //$('.side-icon').click();
 
-        $('aside').height($('.main').height());
+        $('aside').height($('.main').height()>1050?$('.main').height():1050);
 
         //jobcat select init
         var aside_select_dom =$('.jobcat-selected,.area-selected');
