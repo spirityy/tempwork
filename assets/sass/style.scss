@@ -142,6 +142,20 @@ aside{
             }
         }
     }
+    .aside-action{
+        margin-top:20px; 
+        button{
+            height:70px; 
+            line-height:70px;
+            color:#fff;
+            background:#EFAD4D;
+            font-size:34px;
+            width:414px;
+            text-align:center;
+            border:none;
+            @include border-radius(5px);
+        }
+    }
 }
 
 section{
