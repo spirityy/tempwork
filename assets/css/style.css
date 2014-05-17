@@ -113,21 +113,30 @@ aside {
       webkit-border-bottom-right-radius: 5px;
       -moz-border-radius-bottomright: 5px;
       border-bottom-right-radius: 5px; }
-    aside .aside-main .aside-selectarea .area-selected-options:before, aside .aside-main .aside-selectarea .area-selected-options:after {
-      content: "";
-      display: table; }
-    aside .aside-main .aside-selectarea .area-selected-options:after {
-      clear: both; }
-    aside .aside-main .aside-selectarea .area-selected-options .p-options, aside .aside-main .aside-selectarea .area-selected-options .c-options {
-      float: left; }
-      aside .aside-main .aside-selectarea .area-selected-options .p-options li, aside .aside-main .aside-selectarea .area-selected-options .c-options li {
-        width: 167px; }
-    aside .aside-main .aside-selectarea .area-selected-options .p-options > li {
-      background: #f7f7f7; }
-      aside .aside-main .aside-selectarea .area-selected-options .p-options > li.active {
+    aside .aside-main .aside-selectarea .area-selected-options {
+      position: relative; }
+      aside .aside-main .aside-selectarea .area-selected-options:before, aside .aside-main .aside-selectarea .area-selected-options:after {
+        content: "";
+        display: table; }
+      aside .aside-main .aside-selectarea .area-selected-options:after {
+        clear: both; }
+      aside .aside-main .aside-selectarea .area-selected-options .p-options, aside .aside-main .aside-selectarea .area-selected-options .c-options {
+        float: left; }
+        aside .aside-main .aside-selectarea .area-selected-options .p-options li, aside .aside-main .aside-selectarea .area-selected-options .c-options li {
+          width: 167px; }
+      aside .aside-main .aside-selectarea .area-selected-options .p-options > li {
+        background: #f7f7f7; }
+        aside .aside-main .aside-selectarea .area-selected-options .p-options > li.active {
+          background: #ececec; }
+      aside .aside-main .aside-selectarea .area-selected-options .c-options.move-out {
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        left: 0px;
+        -webkit-transform: translate(167px, 0);
+        -ms-transform: translate(167px, 0);
+        transform: translate(167px, 0); }
+      aside .aside-main .aside-selectarea .area-selected-options .c-options > li {
         background: #ececec; }
-    aside .aside-main .aside-selectarea .area-selected-options .c-options > li {
-      background: #ececec; }
   aside .aside-action {
     margin-top: 20px; }
     aside .aside-action button {
@@ -258,14 +267,15 @@ section.action {
   section.action .myjob-post {
     background: #EFAD4D;
     color: #fff;
-    left: 13%; }
+    left: 11%; }
   section.action .othersjob-post {
-    border: 1px solid #c7c7c7;
-    color: #747474;
-    background: #fff;
+    color: #fff;
+    background: #3397da;
     left: 50%; }
 
 aside.trans-show {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0); }
@@ -276,6 +286,8 @@ aside.trans-show {
   transition: 0.3s; }
 
 .main.trans-show {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-transform: translate(460px, 0);
   -ms-transform: translate(460px, 0);
   transform: translate(460px, 0); }

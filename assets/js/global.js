@@ -9,7 +9,10 @@
 
         $('aside').height($('.main').height()>1050?$('.main').height():1050);
 
-        //jobcat select init
+
+        /****
+         * jobcat select area
+         */
         var aside_select_dom =$('.jobcat-selected,.area-selected');
         
         aside_select_dom.each(function(k,el){
@@ -22,25 +25,37 @@
         
         });
 
-
-
-
         //area p select
-        var monidata ={
-            citys : [
-                {city_name:'bj'},
-                {city_name:'sh'},
-                {city_name:'hk'}
-            ]
-        }
+        var allcitys ={
+            '热门':{
+                citys:[
+                    {'city_name':'香港'},
+                    {'city_name':'香港'},
+                    {'city_name':'香港'},
+                    {'city_name':'香港'}
+                ]
+                
+            },
+            '北京':{
+                citys:[
+                    {'city_name':'香港'}
+                ]
+            },
+            '上海':{
+                citys:[
+                    {'city_name':'香港'},
+                    {'city_name':'香港'},
+                    {'city_name':'香港'},
+                ]
+            }
+        };
               
-        $('.c-options').html(Handlebars.compile($('.c-options').html())(monidata));
-        
-
         var  p_options_dom = $('.area-selected-options .p-options'); 
         p_options_dom.find('li').click(function(){
             p_options_dom.find('li').removeClass('active');
             $(this).addClass('active'); 
+            $(this).parent('.p-options').next('.c-options').html(Handlebars.compile($('#city-options').html())(allcitys[$(this).text()]));
         });
+
 
 })()

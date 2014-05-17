@@ -14,10 +14,14 @@ header {
     display: table; }
   header:after {
     clear: both; }
-  header .side-icon {
+  header .side-icon, header .back-icon {
     position: absolute;
     left: 33px;
     top: 24px;
     width: 32px;
     height: 32px;
     background: url(../img/sprite.png) no-repeat 0 0; }
+  header .back-icon {
+    width: 40px;
+    height: 40px;
+    background-position: 0 -190px; }

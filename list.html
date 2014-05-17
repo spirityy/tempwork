@@ -33,15 +33,11 @@
                 </div>
                 <div class="area-selected-options">
                     <ul class="p-options">
-                        <li><a href="">热门</a></li> 
-                        <li class="active"><a href="">北京</a></li> 
-                        <li><a href="">上海</a></li> 
+                        <li><a href="javascript:void(0);">热门</a></li> 
+                        <li class="active"><a href="javascript:void(0);">北京</a></li> 
+                        <li><a href="javascript:void(0);">上海</a></li> 
                     </ul>
-                    <ul class="c-options">
-                        {{#each citys}}
-                        <li><a href="">{{city_name}}</a></li> 
-                        {{/each}}
-                    </ul>
+                    <ul class="c-options"></ul>
                 </div>
                 <div class="jobcat-selected">
                     <i class="up-arrow"></i>
@@ -115,13 +111,21 @@
 
 
     <section class="more">
-        <a href="">显示更多</a>
+        <a href="javascript:void(0);">显示更多</a>
     </section>
 </div>
 
-<script src="http://192.168.1.6:8000/_/js/reloader.js"></script>
+<script type="text/x-handlebars-template" id="city-options">
+
+            {{#each citys}}
+            <li><a href="">{{city_name}}</a></li> 
+            {{/each}}
+
+</script>
+
+<script src="http://192.168.60.113:8000/_/js/reloader.js"></script>
 <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/handlebars-v1.3.0.js"></script>
+<script src="./assets/js/handlebars-v1.3.0.js"></script>
 <script src="./assets/js/global.js"></script>
 
 </body>
