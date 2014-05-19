@@ -342,6 +342,7 @@ section.action {
       background: url(../img/sprite.png) no-repeat 0 -403px;
       margin-left: 5px; }
     .resume section[class^=part] .title {
+      position: relative;
       height: 78px;
       line-height: 78px;
       padding: 0 18px;
@@ -353,6 +354,18 @@ section.action {
       -moz-border-radius-topright: 5px;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px; }
+      .resume section[class^=part] .title span {
+        cursor: pointer;
+        padding-right: 30px; }
+      .resume section[class^=part] .title i.up-arrow, .resume section[class^=part] .title i {
+        background: url(../img/sprite.png) no-repeat 0 -340px;
+        position: absolute;
+        width: 25px;
+        height: 14px;
+        right: 20px;
+        top: 33px; }
+      .resume section[class^=part] .title i.up-arrow {
+        background-position: 0 -360px; }
     .resume section[class^=part] .row, .resume section[class^=part] .row-aciton {
       margin: 10px; }
     .resume section[class^=part] label {
@@ -382,7 +395,8 @@ section.action {
       width: 352px;
       padding: 0;
       height: 58px;
-      line-height: 58px; }
+      line-height: 58px;
+      padding: 0 10px; }
     .resume section[class^=part] textarea {
       padding: 10px;
       -webkit-border-radius: 5px;
@@ -392,6 +406,8 @@ section.action {
       border-radius: 5px;
       width: 330px;
       border: 1px solid #c7c7c7; }
+      .resume section[class^=part] textarea[name="additional"] {
+        width: 504px; }
     .resume section[class^=part] input[value=female] {
       margin-left: 40px; }
     .resume section[class^=part] .send-vercode {
@@ -442,6 +458,10 @@ section.action {
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
         border-radius: 5px; }
+        .resume section[class^=part] .row-action .btn.center {
+          left: 250px; }
+    .resume section[class^=part][class=part-three] .part-main, .resume section[class^=part][class=part-four] .part-main, .resume section[class^=part][class=part-five] .part-main, .resume section[class^=part][class=part-six] .part-main, .resume section[class^=part][class=part-seven] .part-main, .resume section[class^=part][class=part-eight] .part-main {
+      display: none; }
 
 /*
  * transition

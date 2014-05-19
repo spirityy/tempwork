@@ -327,7 +327,7 @@ $resume-border-color:#c7c7c7;;
     }
     .resume-st{
         h4{
-            font-size:$resume-size; 
+            font-size:$resume-size;
             color:$resume-color;
             font-weight:normal;
             margin:0px;
@@ -384,6 +384,7 @@ $resume-border-color:#c7c7c7;;
         font-size:28px;
         color:#656565;
         .title{
+            position:relative;
             height:78px; 
             line-height:78px;
             padding:0 18px;
@@ -395,6 +396,22 @@ $resume-border-color:#c7c7c7;;
             -moz-border-radius-topright: 5px;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
+            span{
+                cursor:pointer;
+                padding-right:30px; 
+            }
+            i.up-arrow,i{
+                    background:url(../img/sprite.png) no-repeat 0 -340px;
+                    position:absolute; 
+                    width:25px;
+                    height:14px;
+                    right:20px;
+                    top:33px;
+            }
+            i.up-arrow{
+                background-position:0 -360px; 
+            }
+
         }
         .row,.row-aciton{
             margin:10px; 
@@ -427,12 +444,16 @@ $resume-border-color:#c7c7c7;;
             padding:0;
             height:58px; 
             line-height:58px;
+            padding:0 10px;
         }
         textarea{
             padding:10px;
             @include border-radius(5px);
             width:330px;
             border:1px solid  $resume-border-color;
+            &[name="additional"]{
+                width:504px; 
+            }
         }
         label,input[type=text]{
         }
@@ -479,12 +500,17 @@ $resume-border-color:#c7c7c7;;
                 font-size:28px;
                 color:#fff;
                 @include border-radius(5px);
+                &.center{
+                    left:250px; 
+                }
+            }
+        }
+        &[class=part-three],&[class=part-four],&[class=part-five],&[class=part-six],&[class=part-seven],&[class=part-eight]{
+            .part-main{
+                display:none; 
             }
         }
     }
-
-
-
 }
 
 /*

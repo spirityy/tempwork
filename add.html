@@ -55,8 +55,9 @@
                 <section class="part-two">
 
                     <div class="title">
-                        基本信息<i class="must-icon"></i>
+                        基本信息<b class="must-icon"></b>
                         <span class="fr">收起</span>
+                        <i class="up-arrow"></i>
                     </div>
                     <div class="part-main">
                         <div class="row">
@@ -123,7 +124,8 @@
                 <section class="part-three">
                     <div class="title">
                         个人信息
-                        <span class="fr">收起</span>
+                        <span class="fr">展开</span>
+                        <i></i>
                     </div>
                     <div class="part-main">
                         <div class="row">
@@ -187,7 +189,8 @@
                 <section class="part-four">
                     <div class="title">
                         工作经验
-                        <span class="fr">收起</span>
+                        <span class="fr">展开</span>
+                        <i></i>
                     </div>
                     <div class="part-main">
                         <div>
@@ -261,7 +264,8 @@
                 <section class="part-five">
                     <div class="title">
                         教育经历
-                        <span class="fr">收起</span>
+                        <span class="fr">展开</span>
+                        <i></i>
                     </div>
                     <div class="part-main">
                         <div>
@@ -312,7 +316,8 @@
                 <section class="part-six">
                      <div class="title">
                         专业技能
-                        <span class="fr">收起</span>
+                        <span class="fr">展开</span>
+                        <i></i>
                     </div>
                     <div class="part-main">
                         <div>
@@ -349,8 +354,8 @@
                                 <input id="skills-level" name="skills-level" type="text" />
                             </div>
                             <div class="row">
-                                <label for="study-degree">其他说明：</label>
-                                <textarea id="duty" name="duty" rows="7"></textarea>
+                                <label for="skills-desc">其他说明：</label>
+                                <textarea id="skills-desc" name="skills-desc" rows="7"></textarea>
                             </div>
                         </div>
                         <div class="row-more">
@@ -362,11 +367,74 @@
                     </div>
                 </section>
                 <section class="part-seven">
+                    <div class="title">
+                        项目经验 
+                        <span class="fr">展开</span>
+                        <i></i>
+                    </div>
                     <div class="part-main">
-                        4
+                        <div>
+                            <div class="row">
+                                <label for="product-starttime">开始时间：</label>
+                                <select id="product-starttime" name="product-starttime">
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="product-endtime">结束时间：</label>
+                                <select id="product-endtime" name="product-endtime">
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="productname">项目名称：</label>
+                                <input type="text" name="productname" id="productname" />
+                            </div>
+                            <div class="row">
+                                <label for="product-company">所在公司：</label>
+                                <input type="text" name="product-company" id="product-company" />
+                            </div>
+                            <div class="row">
+                                <label for="product-position">项目职务：</label>
+                                <input type="text" name="product-position" id="product-position" />
+                            </div>
+                            <div class="row">
+                                <label for="product-desc">项目描述：</label>
+                                <textarea id="product-desc" name="product-desc" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="row-action">
+                            <button class="btn">保存</button>
+                        </div>
                     </div>
                 </section>
-
+                <section class="part-eight">
+                    <div class="title">
+                        附加信息
+                        <span class="fr">展开</span>
+                        <i></i>
+                    </div>
+                    <div class="part-main">
+                            <div class="row">
+                                <label for="img-upload">照片：</label>
+                            </div>
+                            <div class="row">
+                                <label for="additional">附件信息：</label>
+                            </div>
+                            <div class="row">
+                                <textarea id="additional" name="additional" rows="7"></textarea>
+                            </div>
+                            <div class="row-action">
+                                <button class="btn center">保存</button>
+                            </div>
+                    </div>
+                </section>
         </section>
 
         <section class="action">
@@ -379,6 +447,28 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/handlebars-v1.3.0.js"></script>
     <script src="./assets/js/global.js"></script>
+
+
+    <script>
+
+        (function(){
+         var dom_trigger = $('section .title span,section .title i');
+             dom_trigger.click(function(){
+                 var parent_dom = $(this).parent('.title');
+                    $(parent_dom).find('i').toggleClass('up-arrow');
+                    if(parent_dom.find('i').attr('class').indexOf('up-arrow')===-1){
+                       parent_dom.find('span').html('展开');
+                       parent_dom.next('.part-main').slideUp('fast');
+                    }else{
+                       parent_dom.find('span').html('收起');
+                       parent_dom.next('.part-main').slideDown('fast');
+                    }
+                    
+             })
+
+        })()
+    
+    </script>
 
 </body>
 </html>
