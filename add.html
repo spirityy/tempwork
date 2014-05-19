@@ -23,25 +23,27 @@
                 </section>
 
                 <section class="part-one">
-                    <div class="row">
-                        <label for="">手机号：</label>
-                        <input type="text">
-                        <a href="javascript:void(0);">发送验证码</a>
-                    </div>
-                    <div class="row">
-                        <label for="">验证码：</label>
-                        <input type="text">
-                    </div>
-                    <div class="row">
-                        <label for="">设置密码：</label>
-                        <input type="text">
-                    </div>
-                    <div class="row">
-                        <label for="">重复密码：</label>
-                        <input type="text">
-                    </div>
-                    <div class="row-action">
-                        <button>确定</button>
+                    <div class="part-main">
+                        <div class="row">
+                            <label for="phone-num">手机号：</label>
+                            <input type="text" name="phone-num" id="phone-num" />
+                            <a href="javascript:void(0);" class="send-vercode">发送验证码</a>
+                        </div>
+                        <div class="row">
+                            <label for="vercode">验证码：</label>
+                            <input type="text" name="vercode" id="vercode" />
+                        </div>
+                        <div class="row">
+                            <label for="pwd">设置密码：</label>
+                            <input type="password" name="pwd" id="pwd" />
+                        </div>
+                        <div class="row">
+                            <label for="re-pwd">重复密码：</label>
+                            <input type="password" name="re-pwd" id="re-pwd" />
+                        </div>
+                        <div class="row-action">
+                            <button class="btn">确定</button>
+                        </div>
                     </div>
                 </section>
 
@@ -51,7 +53,65 @@
                 </section>
 
                 <section class="part-two">
-                   2 
+
+                    <div class="title">
+                        基本信息<i class="must-icon"></i>
+                        <span class="fr">收起</span>
+                    </div>
+                    <div class="part-main">
+                        <div class="row">
+                            <label for="username">姓名：</label>
+                            <input type="text" name="username" id="username" /><i class="must-icon"></i>
+
+                        </div>
+                        <div class="row">
+                            <label for="usersex">性别：</label>
+                            <input type="radio" value="male" name="usersex" />男
+                            <input type="radio" value="female" name="usersex" />女
+                        </div>
+                        <div class="row">
+                            <label for="degree">学历：</label>
+                            <select id="degree" name="degree">
+                                <option value="">专</option>
+                                <option value="">本</option>
+                                <option value="">硕</option>
+                                <option value="">博</option>
+                            </select><i class="must-icon"></i>
+                        </div>
+                        <div class="row">
+                            <label for="email">电子邮箱：</label>
+                            <input type="text" name="email" id="email" /><i class="must-icon"></i>
+
+                        </div>
+                        <div class="row">
+                            <label for="re-phone-num">手机号：</label>
+                            <input type="text" name="re-phone-num" id="re-phone-num" /><i class="must-icon"></i>
+
+                        </div>
+                        <div class="row">
+                            <label for="jobyears">工作年限：</label>
+                            <select id="jobyears" name="jobyears">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select><i class="must-icon"></i>
+
+                        </div>
+                        <div class="row">
+                            <label for="schoolname">学校名称：</label>
+                            <select id="schoolname" name="schoolname">
+                                <option value="">x</option>
+                                <option value="">x</option>
+                                <option value="">x</option>
+                                <option value="">x</option>
+                            </select><i class="must-icon"></i>
+
+                        </div>
+                        <div class="row-action">
+                            <button class="btn">确定</button>
+                        </div>
+                    </div>
                 </section>
 
 
@@ -61,23 +121,250 @@
                 </section>
 
                 <section class="part-three">
-                    3
-                </section>
-                <section class="part-four">
-                    4
-                </section>
-                <section class="part-five">
-                    5
-                </section>
-                <section class="part-six">
-                    6
-                </section>
-                <section class="part-seven">
-                    7
+                    <div class="title">
+                        个人信息
+                        <span class="fr">收起</span>
+                    </div>
+                    <div class="part-main">
+                        <div class="row">
+                            <label for="brithyear">出生年份：</label>
+                            <select id="brithyear" name="brithyear">
+                                <option value="">1980</option>
+                                <option value="">1980</option>
+                                <option value="">1980</option>
+                                <option value="">1980</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="national">民族：</label>
+                            <input type="text" name="national" id="national" />
+                        </div>
+                        <div class="row">
+                            <label for="marriage">婚姻状况：</label>
+                            <select id="marriage" name="marriage">
+                                <option value="">yes</option>
+                                <option value="">no</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="livecity">现住城市：</label>
+                            <select id="livecity" name="livecity">
+                                <option value="">上海</option>
+                                <option value="">上海</option>
+                                <option value="">上海</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="livestatus">目前状态：</label>
+                            <select id="livestatus" name="livestatus">
+                                <option value="">离职</option>
+                                <option value="">在职</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="worktime">到岗时间：</label>
+                            <select id="worktime" name="worktime">
+                                <option value="">1week</option>
+                                <option value="">1week</option>
+                                <option value="">1week</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="expsalary">期望月薪：</label>
+                            <select id="expsalary" name="expsalary">
+                                <option value="">6000-8000</option>
+                                <option value="">8000-10000</option>
+                                <option value="">10000-50000</option>
+                            </select>
+                            <span>元/月</span>
+                        </div>
+                        <div class="row-action">
+                            <button class="btn">确定</button>
+                        </div>
+                    </div>
                 </section>
 
-                <section class="part-eight">
-                    8
+                <section class="part-four">
+                    <div class="title">
+                        工作经验
+                        <span class="fr">收起</span>
+                    </div>
+                    <div class="part-main">
+                        <div>
+                            <div class="row">
+                                <label for="work-starttime">开始时间：</label>
+                                <select id="work-starttime" name="work-starttime">
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="work-endtime">结束时间：</label>
+                                <select id="work-endtime" name="work-endtime">
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="companyname">公司名称：</label>
+                                <input type="text" name="companyname" id="companyname" />
+                            </div>
+                            <div class="row">
+                                <label for="jobname">职位名称：</label>
+                                <input type="text" name="jobname" id="jobname" />
+                            </div>
+                            <div class="row">
+                                <label for="department">所在部门：</label>
+                                <input type="text" name="department" id="department" />
+                            </div>
+                            <div class="row">
+                                <label for="duty">工作职责：</label>
+                                <textarea id="duty" name="duty" rows="7"></textarea>
+                            </div>
+                            <div class="row">
+                                <label for="companysize">公司规模：</label>
+                                <select id="companysize" name="companysize">
+                                    <option value="">100</option>
+                                    <option value="">1000</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="industry">行业：</label>
+                                <select id="industry" name="industry">
+                                    <option value="">互联网</option>
+                                    <option value="">互联网</option>
+                                    <option value="">互联网</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="salary">薪酬状况：</label>
+                                <select id="salary" name="salary">
+                                    <option value="">6000-8000</option>
+                                    <option value="">8000-10000</option>
+                                    <option value="">10000-50000</option>
+                                </select>
+                                <span>元/月</span>
+                            </div>
+                        </div>
+                        <div class="row-more">
+                            <a href="javascript:void(0);" class="add-more">继续添加</a>
+                        </div>
+                        <div class="row-action">
+                            <button class="btn">保存</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="part-five">
+                    <div class="title">
+                        教育经历
+                        <span class="fr">收起</span>
+                    </div>
+                    <div class="part-main">
+                        <div>
+                            <div class="row">
+                                <label for="study-starttime">开始时间：</label>
+                                <select id="study-starttime" name="study-starttime">
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="study-endtime">结束时间：</label>
+                                <select id="study-endtime" name="study-endtime">
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                    <option value="">1980</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="study-schoolname">学校名称：</label>
+                                <input type="text" name="study-schoolname" id="study-schoolname" />
+                            </div>
+                            <div class="row">
+                                <label for="study-major">专业名称：</label>
+                                <input type="text" name="study-major" id="study-major" />
+                            </div>
+                            <div class="row">
+                                <label for="study-degree">学历：</label>
+                                <select id="study-degree" name="study-degree">
+                                    <option value="">专</option>
+                                    <option value="">本</option>
+                                    <option value="">硕</option>
+                                    <option value="">博</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row-more">
+                            <a href="javascript:void(0);" class="add-more">继续添加</a>
+                        </div>
+                        <div class="row-action">
+                            <button class="btn">保存</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="part-six">
+                     <div class="title">
+                        专业技能
+                        <span class="fr">收起</span>
+                    </div>
+                    <div class="part-main">
+                        <div>
+                            <div class="row">
+                                <label for="language-type">语言类别：</label>
+                                <select id="language-type" name="language-type">
+                                    <option value="">英</option>
+                                    <option value="">日</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="language-level">掌握程度：</label>
+                                <select id="language-level" name="language-level">
+                                    <option value="">4</option>
+                                    <option value="">6</option>
+                                    <option value="">8</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="study-degree">其他说明：</label>
+                                <textarea id="duty" name="duty" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="row-more">
+                            <a href="javascript:void(0);" class="add-more">继续添加</a>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <label for="skills-name">语言类别：</label>
+                                <input type="text" id="skills-name-type" name="skills-name" />
+                            </div>
+                            <div class="row">
+                                <label for="skills-level">掌握程度：</label>
+                                <input id="skills-level" name="skills-level" type="text" />
+                            </div>
+                            <div class="row">
+                                <label for="study-degree">其他说明：</label>
+                                <textarea id="duty" name="duty" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="row-more">
+                            <a href="javascript:void(0);" class="add-more">继续添加</a>
+                        </div>
+                        <div class="row-action">
+                            <button class="btn">保存</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="part-seven">
+                    <div class="part-main">
+                        4
+                    </div>
                 </section>
 
         </section>
@@ -88,7 +375,7 @@
 
     </div>
 
-    <!--<script src="http://10.31.17.197:8000/_/js/reloader.js"></script>-->
+    <script src="http://10.31.17.197:8000/_/js/reloader.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/handlebars-v1.3.0.js"></script>
     <script src="./assets/js/global.js"></script>
