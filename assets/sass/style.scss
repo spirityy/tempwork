@@ -206,7 +206,7 @@ section{
                 font-size:25px;
                 @include clearfix();
                 ul>li{
-                    margin-right:30px;
+                    margin-right:28px;
                     float:left; 
                 }
                 .addr-icon,.people-icon,.date-icon{
@@ -294,7 +294,7 @@ section.action{
         font-size:33px;
         top:30px;
     }
-    .myjob-post{
+    .myjob-post,.post-resume{
         background:#EFAD4D;
         color:#fff;
         left:11%;
@@ -304,16 +304,80 @@ section.action{
         background:$themecolor;
         left:50%;
     }
+    .post-resume{
+        margin:0;
+        width:40%;
+        left:30%;
+    }
 }
 
+$resume-size:28px;
+$resume-color:#6e6e6e;
+$resume-border-color:#c7c7c7;;
 
-//transition
+.resume{
+    padding:20px;
+    background:#eee;
+    section{
+        background:#fff;
+       padding:18px; 
+       border:1px solid $resume-border-color;
+       @include border-radius(5px);
+       margin-bottom:20px;
+    }
+    .resume-st{
+        h4{
+            font-size:$resume-size; 
+            color:$resume-color;
+            font-weight:normal;
+            margin:0px;
+        }
+        p{
+            margin:5px 0;
+            @include border-radius(5px);
+            width:100%; 
+            border:1px solid $resume-border-color;
+            height:43px;
+            span{
+                display:block;
+                width:100%;
+                height:43px;
+                background-color:#FFC152;
+                background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+                background-image: linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+                background-size: 40px 40px;
+            }
+        }
+    }
+    .tips{
+        background:#EFF9FF;
+        color:#329ADD;
+        h4{
+            margin:0; 
+            font-weight:normal;
+            font-size:40px;
+            span{
+                font-size:28px;
+                vertical-align:middle;
+            }
+        }
+        .desc{
+            font-size:26px;
+            color:#999;
+        }
+    }
+}
+
+/*
+ * transition
+ */
 aside.trans-show{
     @include transition(.3s);
     @include translate(0,0);
 }
 
 .main{
+    width:100%;
     position:absolute;
     @include transition(.3s);
 }
