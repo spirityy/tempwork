@@ -423,6 +423,7 @@
                     <div class="part-main">
                             <div class="row">
                                 <label for="img-upload">照片：</label>
+                                <input type="flie" />
                             </div>
                             <div class="row">
                                 <label for="additional">附件信息：</label>
@@ -452,16 +453,15 @@
     <script>
 
         (function(){
-         var dom_trigger = $('section .title span,section .title i');
+         var dom_trigger = $('section .title');
              dom_trigger.click(function(){
-                 var parent_dom = $(this).parent('.title');
-                    $(parent_dom).find('i').toggleClass('up-arrow');
-                    if(parent_dom.find('i').attr('class').indexOf('up-arrow')===-1){
-                       parent_dom.find('span').html('展开');
-                       parent_dom.next('.part-main').slideUp('fast');
+                    $(this).find('i').toggleClass('up-arrow');
+                    if($(this).find('i').attr('class').indexOf('up-arrow')===-1){
+                       $(this).find('span').html('展开');
+                       $(this).next('.part-main').slideUp('fast');
                     }else{
-                       parent_dom.find('span').html('收起');
-                       parent_dom.next('.part-main').slideDown('fast');
+                       $(this).find('span').html('收起');
+                       $(this).next('.part-main').slideDown('fast');
                     }
                     
              })
