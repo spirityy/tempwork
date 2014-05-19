@@ -30,8 +30,6 @@
             '热门':{
                 citys:[
                     {'city_name':'香港'},
-                    {'city_name':'香港'},
-                    {'city_name':'香港'},
                     {'city_name':'香港'}
                 ]
                 
