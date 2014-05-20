@@ -421,7 +421,10 @@ $resume-border-color:#c7c7c7;;
             i.up-arrow{
                 background-position:0 -360px; 
             }
-
+            &.expand{
+                @include border-radius(5px);
+                border-bottom:none; 
+            }
         }
         .row,.row-aciton{
             margin:10px; 

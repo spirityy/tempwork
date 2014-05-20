@@ -455,6 +455,7 @@
         (function(){
          var dom_trigger = $('section .title');
              dom_trigger.click(function(){
+                    $(this).toggleClass('expand');
                     $(this).find('i').toggleClass('up-arrow');
                     if($(this).find('i').attr('class').indexOf('up-arrow')===-1){
                        $(this).find('span').html('展开');

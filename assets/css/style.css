@@ -373,6 +373,13 @@ section.action {
         top: 33px; }
       .resume section[class^=part] .title i.up-arrow {
         background-position: 0 -360px; }
+      .resume section[class^=part] .title.expand {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        border-bottom: none; }
     .resume section[class^=part] .row, .resume section[class^=part] .row-aciton {
       margin: 10px; }
     .resume section[class^=part] label {
