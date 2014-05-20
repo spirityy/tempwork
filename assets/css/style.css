@@ -549,11 +549,15 @@ aside.trans-show {
   transform: translate(0, 0); }
 
 .main {
+  padding-top: 83px;
+  z-index: 999;
   min-height: 1050px;
   width: 100%;
   position: absolute;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
+  .main .blank {
+    height: 83px; }
 
 .main.trans-show {
   -webkit-transition: 0.3s;

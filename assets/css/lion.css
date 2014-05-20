@@ -446,6 +446,9 @@ textarea {
     cursor: not-allowed; }
 
 header {
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
   color: white;
   text-align: center;
   display: table;

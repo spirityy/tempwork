@@ -602,12 +602,16 @@ aside.trans-show{
     @include transition(.3s);
     @include translate(0,0);
 }
-
 .main{
+    padding-top:83px;
+    z-index:999;
     min-height:1050px;
     width:100%;
     position:absolute;
     @include transition(.3s);
+    .blank{
+        height:83px; 
+    }
 }
 .main.trans-show{
     @include transition(.3s);

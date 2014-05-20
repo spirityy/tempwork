@@ -7,6 +7,9 @@ $font-color:#fff;
 $font-size:36px;
 
 header{
+    position:fixed;
+    top:0px;
+    z-index:9999;
     color:$font-color;
     text-align:center;
     display:table;
