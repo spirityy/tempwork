@@ -582,10 +582,6 @@ section.success-go-on{
     }
 }
 
-
-
-
-
 /*
  * transition
  */
@@ -595,6 +591,7 @@ aside.trans-show{
 }
 
 .main{
+    min-height:1050px;
     width:100%;
     position:absolute;
     @include transition(.3s);

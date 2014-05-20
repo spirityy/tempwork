@@ -535,6 +535,7 @@ aside.trans-show {
   transform: translate(0, 0); }
 
 .main {
+  min-height: 1050px;
   width: 100%;
   position: absolute;
   -webkit-transition: 0.3s;

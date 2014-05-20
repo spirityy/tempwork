@@ -5,9 +5,9 @@
             e.stopPropagation();
             trans_dom.toggleClass('trans-show');
             if(trans_dom.hasClass('trans-show')){
-                $('.main.trans-show').on('click',function(e){
-                    e.preventDefault();
-                     $('.side-icon').click();
+                $('.main.trans-show').on('click',function(event){
+                    event.preventDefault();
+                    $('.side-icon').click();
                 });
             }else{
                 $('.main').off('click');
@@ -15,9 +15,7 @@
         });
 
         //$('.side-icon').click();
-
         $('aside').height($('.main').height()>1050?$('.main').height():1050);
-
 
         /****
          * jobcat select area
