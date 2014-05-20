@@ -31,7 +31,7 @@
                     <h5>工作地点</h5>
                     <p class="sub">请选择</p>
                 </div>
-                <div class="area-selected-options">
+                <div class="area-selected-options options">
                     <ul class="p-options">
                         <li><a href="javascript:void(0);">热门</a></li> 
                         <li class="active"><a href="javascript:void(0);">北京</a></li> 
@@ -45,11 +45,11 @@
                     <p class="sub">请选择</p>
 
                 </div>
-                <ul class="jobcat-selected-options">
-                    <li><a href="">互联网</a></li>
-                    <li><a href="">互联网</a></li>
-                    <li><a href="">互联网</a></li>
-                    <li><a href="">互联网</a></li>
+                <ul class="jobcat-selected-options options">
+                    <li><a href="">互联网1</a></li>
+                    <li><a href="">互联网2</a></li>
+                    <li><a href="">互联网3</a></li>
+                    <li><a href="">互联网4</a></li>
                 </ul>
             </div>
         </div>
@@ -117,16 +117,49 @@
 
 <script type="text/x-handlebars-template" id="city-options">
 
-            {{#each citys}}
-            <li><a href="">{{city_name}}</a></li> 
-            {{/each}}
+        {{#each citys}}
+        <li><a href="javascript:void(0);">{{city_name}}</a></li> 
+        {{/each}}
 
 </script>
 
-<!--<script src="http://10.31.17.197:8000/_/js/reloader.js"></script>-->
+
+<script type="text/x-handlebars-template" id="index-list-item">
+            <a href="detail.html">
+                <div class="list-item">
+                    <div class="item-hd">
+                        <h3>{{title}}</h3> 
+                        <i class="detail"></i>
+                    </div>
+                    <div class="item-options">
+                        <ul>
+                            <li class="addr-icon">地点：{{city}}</li>
+                            <li class="people-icon">人数：{{peoplenum}}</li>
+                            <li class="date-icon">日期：{{datetime}}</li>
+                        </ul>
+                    </div>
+                    <div class="item-desc">
+                        {{desc}}
+                    </div>
+                </div>
+            </a>
+</script>
+
+<script src="http://10.31.17.197:8000/_/js/reloader.js"></script>
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/handlebars-v1.3.0.js"></script>
 <script src="./assets/js/global.js"></script>
+
+
+<script>
+
+    (function(){
+         $('.more a').click(function(){
+                $(this).addClass('loading').html(''); 
+         });
+     })()
+
+</script>
 
 </body>
 </html>

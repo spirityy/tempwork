@@ -219,6 +219,11 @@ section.more {
     color: #8d8d8d; }
     section.more a:hover {
       text-decoration: none; }
+    section.more a.loading {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background: url(../img/loading.gif) no-repeat; }
 
 section.detail {
   padding: 30px 40px;
