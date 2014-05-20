@@ -209,7 +209,7 @@ section{
                     width:700px;
                     overflow:hidden;
                     li{
-                        margin-right:48px;
+                        margin-right:40px;
                         float:left; 
                     }
                 }
@@ -458,6 +458,16 @@ $resume-border-color:#c7c7c7;;
             height:58px; 
             line-height:58px;
             padding:0 10px;
+            &[name$=year]{
+                width:140px;
+            }
+            &[name$=mouth]{
+                margin-left:10px;
+                width:102px;
+            }
+        }
+        .tonow{
+            margin-left:10px; 
         }
         textarea{
             padding:10px;

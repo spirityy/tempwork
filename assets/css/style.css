@@ -192,7 +192,7 @@ section .main-list .list-item {
       width: 700px;
       overflow: hidden; }
       section .main-list .list-item .item-options ul li {
-        margin-right: 48px;
+        margin-right: 40px;
         float: left; }
     section .main-list .list-item .item-options .addr-icon, section .main-list .list-item .item-options .people-icon, section .main-list .list-item .item-options .date-icon {
       padding-left: 32px;
@@ -411,6 +411,13 @@ section.action {
       height: 58px;
       line-height: 58px;
       padding: 0 10px; }
+      .resume section[class^=part] select[name$=year] {
+        width: 140px; }
+      .resume section[class^=part] select[name$=mouth] {
+        margin-left: 10px;
+        width: 102px; }
+    .resume section[class^=part] .tonow {
+      margin-left: 10px; }
     .resume section[class^=part] textarea {
       padding: 10px;
       -webkit-border-radius: 5px;
