@@ -551,7 +551,7 @@ aside.trans-show {
 .main {
   padding-top: 83px;
   z-index: 999;
-  min-height: 1050px;
+  min-height: 1000px;
   width: 100%;
   position: absolute;
   -webkit-transition: 0.3s;
