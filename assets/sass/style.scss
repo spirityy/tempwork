@@ -172,7 +172,7 @@ section{
             text-decoration:none; 
             .list-item{
                 background:#f0f0f0;
-                border-left:8px solid $themecolor;
+                //border-left:8px solid $themecolor;
             }
         }
         .list-item{
@@ -205,9 +205,13 @@ section{
                 color:#ababab;
                 font-size:25px;
                 @include clearfix();
-                ul>li{
-                    margin-right:28px;
-                    float:left; 
+                ul{
+                    width:700px;
+                    overflow:hidden;
+                    li{
+                        margin-right:48px;
+                        float:left; 
+                    }
                 }
                 .addr-icon,.people-icon,.date-icon{
                     padding-left:32px;  
@@ -341,7 +345,7 @@ $resume-border-color:#c7c7c7;;
             span{
                 @include transition(.3s);
                 display:block;
-                width:100%;
+                width:50%;
                 height:43px;
                 background-color:#FFC152;
                 background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
@@ -512,6 +516,69 @@ $resume-border-color:#c7c7c7;;
         }
     }
 }
+
+
+//success
+
+section.success-main{
+    @include clearfix();
+    padding:20px;
+    .main-wrapper{
+        height:270px;
+        position:relative;
+        border-bottom:1px dashed #d2d2d2;
+        .success-icon{
+            position:absolute;
+            left:10%;
+            top:80px;
+            width:101px;
+            height:75px;
+            background:url(../img/sprite.png) no-repeat 0px -480px;
+        }
+        .doc{
+            position:absolute;
+            color:#6c6c6c;
+            width:320px;
+            overflow:hidden;
+            left:30%; 
+            top:70px;
+            font-size:30px;
+            h3{
+                font-weight:normal;
+                margin:0;
+                font-size:45px; 
+            }
+            .or{
+                color:#EFAD4D; 
+            }
+        }
+
+    }
+}
+section.success-go-on{
+    text-align:center;
+    padding-top:170px;
+    .btn{
+        width:314px;
+        height:78px;
+        line-height:78px;
+        background:$themecolor;
+        font-size:36px;
+        color:#fff;
+        text-align:center;
+        @include border-radius(5px);
+    }
+    p{
+        margin:20px 0;
+        font-size:30px; 
+        color:#6d6d6d;
+
+    }
+}
+
+
+
+
 
 /*
  * transition

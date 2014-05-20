@@ -12,7 +12,7 @@
     <div class="main">
         <header>
             <a href="list.html" class="back-icon"></a>
-            填写简历
+            推荐好友
         </header>
 
         <section class="resume">
@@ -52,10 +52,32 @@
                     <h4>必填项<span>（完成以下信息即可申请职位）</span></h4>
                 </section>
 
+
+                <section class="part-nine">
+                    <div class="title">
+                        推荐人信息<b class="must-icon"></b>
+                        <span class="fr">收起</span>
+                        <i class="up-arrow"></i>
+                    </div>
+                    <div class="part-main">
+                        <div class="row">
+                            <label for="recom-name">姓名：</label>
+                            <input type="text" name="recom-name" id="recom-name" /><i class="must-icon"></i>
+                        </div>
+                        <div class="row">
+                            <label for="recom-phone-num">手机号：</label>
+                            <input type="text" name="recom-phone-num" id="recom-phone-num" /><i class="must-icon"></i>
+                        </div>
+                        <div class="row-action">
+                            <button class="btn">确定</button>
+                        </div>
+                    </div>
+                </section>
+
                 <section class="part-two">
 
                     <div class="title">
-                        基本信息<b class="must-icon"></b>
+                        被推荐人基本信息<b class="must-icon"></b>
                         <span class="fr">收起</span>
                         <i class="up-arrow"></i>
                     </div>
@@ -63,7 +85,6 @@
                         <div class="row">
                             <label for="username">姓名：</label>
                             <input type="text" name="username" id="username" /><i class="must-icon"></i>
-
                         </div>
                         <div class="row">
                             <label for="usersex">性别：</label>
@@ -439,7 +460,7 @@
         </section>
 
         <section class="action">
-            <a href="success.html" class="btn post-resume">提交</a>
+            <a href="add.html" class="btn post-resume">提交</a>
         </section>
 
     </div>
@@ -448,7 +469,6 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/handlebars-v1.3.0.js"></script>
     <script src="./assets/js/global.js"></script>
-
 
     <script>
 
@@ -472,3 +492,4 @@
 
 </body>
 </html>
+

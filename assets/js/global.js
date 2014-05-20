@@ -55,11 +55,12 @@
             $(this).parent('.p-options').next('.c-options').html(Handlebars.compile($('#city-options').html())(allcitys[$(this).text()]));
         });
 
+        p_options_dom.find('li').first().click();
+
 
         /*
          * selected action
          */
-
 
 
         /*

@@ -157,8 +157,7 @@ aside {
 section .main-list a:hover {
   text-decoration: none; }
   section .main-list a:hover .list-item {
-    background: #f0f0f0;
-    border-left: 8px solid #3397da; }
+    background: #f0f0f0; }
 section .main-list .list-item {
   height: 175px;
   overflow: hidden;
@@ -189,9 +188,12 @@ section .main-list .list-item {
       display: table; }
     section .main-list .list-item .item-options:after {
       clear: both; }
-    section .main-list .list-item .item-options ul > li {
-      margin-right: 28px;
-      float: left; }
+    section .main-list .list-item .item-options ul {
+      width: 700px;
+      overflow: hidden; }
+      section .main-list .list-item .item-options ul li {
+        margin-right: 48px;
+        float: left; }
     section .main-list .list-item .item-options .addr-icon, section .main-list .list-item .item-options .people-icon, section .main-list .list-item .item-options .date-icon {
       padding-left: 32px;
       background: url(../img/sprite.png) no-repeat; }
@@ -309,7 +311,7 @@ section.action {
       -webkit-transition: 0.3s;
       transition: 0.3s;
       display: block;
-      width: 100%;
+      width: 50%;
       height: 43px;
       background-color: #FFC152;
       background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -462,6 +464,60 @@ section.action {
           left: 250px; }
     .resume section[class^=part][class=part-three] .part-main, .resume section[class^=part][class=part-four] .part-main, .resume section[class^=part][class=part-five] .part-main, .resume section[class^=part][class=part-six] .part-main, .resume section[class^=part][class=part-seven] .part-main, .resume section[class^=part][class=part-eight] .part-main {
       display: none; }
+
+section.success-main {
+  padding: 20px; }
+  section.success-main:before, section.success-main:after {
+    content: "";
+    display: table; }
+  section.success-main:after {
+    clear: both; }
+  section.success-main .main-wrapper {
+    height: 270px;
+    position: relative;
+    border-bottom: 1px dashed #d2d2d2; }
+    section.success-main .main-wrapper .success-icon {
+      position: absolute;
+      left: 10%;
+      top: 80px;
+      width: 101px;
+      height: 75px;
+      background: url(../img/sprite.png) no-repeat 0px -480px; }
+    section.success-main .main-wrapper .doc {
+      position: absolute;
+      color: #6c6c6c;
+      width: 320px;
+      overflow: hidden;
+      left: 30%;
+      top: 70px;
+      font-size: 30px; }
+      section.success-main .main-wrapper .doc h3 {
+        font-weight: normal;
+        margin: 0;
+        font-size: 45px; }
+      section.success-main .main-wrapper .doc .or {
+        color: #EFAD4D; }
+
+section.success-go-on {
+  text-align: center;
+  padding-top: 170px; }
+  section.success-go-on .btn {
+    width: 314px;
+    height: 78px;
+    line-height: 78px;
+    background: #3397da;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
+  section.success-go-on p {
+    margin: 20px 0;
+    font-size: 30px;
+    color: #6d6d6d; }
 
 /*
  * transition
