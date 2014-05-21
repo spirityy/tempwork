@@ -138,7 +138,7 @@ aside {
       aside .aside-main .aside-selectarea .area-selected-options .c-options > li {
         background: #ececec; }
   aside .aside-action {
-    margin-top: 20px; }
+    margin-top: 30px; }
     aside .aside-action button {
       height: 70px;
       line-height: 70px;
@@ -380,6 +380,16 @@ section.action {
         -o-border-radius: 5px;
         border-radius: 5px;
         border-bottom: none; }
+    .resume section[class^=part] div[class$=wrapper] {
+      position: relative; }
+      .resume section[class^=part] div[class$=wrapper] .del {
+        position: absolute;
+        right: 5px;
+        top: 0px;
+        width: 20px;
+        height: 20px;
+        background: url(../img/sprite.png) no-repeat 0 -580px;
+        cursor: pointer; }
     .resume section[class^=part] .row, .resume section[class^=part] .row-aciton {
       margin: 10px; }
     .resume section[class^=part] label {
@@ -546,7 +556,11 @@ aside.trans-show {
   transition: 0.3s;
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
-  transform: translate(0, 0); }
+  transform: translate(0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
 .main {
   padding-top: 83px;
@@ -555,7 +569,11 @@ aside.trans-show {
   width: 100%;
   position: absolute;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden; }
   .main .blank {
     height: 83px; }
 

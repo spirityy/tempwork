@@ -151,7 +151,7 @@ aside{
         }
     }
     .aside-action{
-        margin-top:20px; 
+        margin-top:30px; 
         button{
             height:70px; 
             line-height:70px;
@@ -426,6 +426,18 @@ $resume-border-color:#c7c7c7;;
                 border-bottom:none; 
             }
         }
+        div[class$=wrapper]{
+            position:relative;
+            .del{
+                position:absolute;
+                right:5px;
+                top:0px;
+                width:20px;
+                height:20px;
+                background:url(../img/sprite.png) no-repeat 0 -580px;
+                cursor:pointer;
+            }
+        }
         .row,.row-aciton{
             margin:10px; 
         }
@@ -601,6 +613,10 @@ section.success-go-on{
 aside.trans-show{
     @include transition(.3s);
     @include translate(0,0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .main{
     padding-top:83px;
@@ -612,6 +628,10 @@ aside.trans-show{
     .blank{
         height:83px; 
     }
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .main.trans-show{
     @include transition(.3s);

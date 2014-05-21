@@ -193,7 +193,8 @@
                         <i></i>
                     </div>
                     <div class="part-main">
-                        <div>
+                        <div class="work-item-wrapper">
+                            <i class="del"></i>
                             <div class="row">
                                 <label for="work-starttime">开始时间：</label>
                                 <select id="work-start-year" name="work-start-year">
@@ -277,7 +278,8 @@
                         <i></i>
                     </div>
                     <div class="part-main">
-                        <div>
+                        <div class="study-item-wrapper">
+                            <i class="del"></i>
                             <div class="row">
                                 <label for="study-start-year">开始时间：</label>
                                 <select id="study-start-year" name="study-start-year">
@@ -338,7 +340,8 @@
                         <i></i>
                     </div>
                     <div class="part-main">
-                        <div>
+                        <div class="skills-item-wrapper">
+                            <i class="del"></i>
                             <div class="row">
                                 <label for="language-type">语言类别：</label>
                                 <select id="language-type" name="language-type">
@@ -486,10 +489,10 @@
                     $(this).find('i').toggleClass('up-arrow');
                     if($(this).find('i').attr('class').indexOf('up-arrow')===-1){
                        $(this).find('span').html('展开');
-                       $(this).next('.part-main').slideUp('fast');
+                       $(this).next('.part-main').slideUp(100);
                     }else{
                        $(this).find('span').html('收起');
-                       $(this).next('.part-main').slideDown('fast');
+                       $(this).next('.part-main').slideDown(100);
                     }
                     
              })
