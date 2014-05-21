@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=640,maximum-scale=1.0,user-scalable=no">
+<meta name="viewport" content="width=width-d,maximum-scale=1.0,user-scalable=no">
 <title>list</title>
 <link rel="stylesheet" href="./assets/css/lion.css">
 <link rel="stylesheet" href="./assets/css/style.css">
@@ -152,10 +152,23 @@
 
 <script>
 
+
+        var minidata = {
+            'title':'111',
+            'city':'sh',
+            'peoplenum':'10',
+            'datetime':'2014.5',
+            'desc':'aaaaaaaaaaaaaaaaaaaa'
+        };
+    
+
     (function(){
          $('.more a').click(function(){
-                $(this).addClass('loading').html(''); 
+                //$(this).addClass('loading').html(''); 
+                $('.main-list').append(Handlebars.compile($('#index-list-item').html())(minidata));
+
          });
+
      })()
 
 </script>
