@@ -1,14 +1,19 @@
 @import "functions.scss";
 @import "animate.scss";
 
+body{
+    position:relative;
+}
 aside{
+    @include box-shadow(5px 0 20px rgba(0,0,0,.3));
     position:absolute;
+    z-index:10;
     width:420px;
     padding:20px;
     min-height:100%;
     background:#eaeaea;
     @include transition(.3s);
-    @include translate(-460px,0);
+    @include translate(-480px,0);
     .aside-hd{
         @include clearfix();
         margin-bottom:20px;
@@ -99,6 +104,10 @@ aside{
                 }
             }
             .jobcat-selected-options,.area-selected-options{
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
+                backface-visibility: hidden;
                 display:none;
                 li{
                     width:374px; 
@@ -620,11 +629,10 @@ aside.trans-show{
 }
 .main{
     padding-top:83px;
-    z-index:999;
-    min-height:1000px;
+    z-index:9;
+    min-height:960px;
     width:100%;
     position:absolute;
-    @include transition(.3s);
     .blank{
         height:83px; 
     }
@@ -632,8 +640,4 @@ aside.trans-show{
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
-}
-.main.trans-show{
-    @include transition(.3s);
-    @include translate(460px,0);
 }

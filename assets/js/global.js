@@ -1,11 +1,11 @@
- (function(){
+(function(){
 
-        var trans_dom = $('aside,.main');
+        var trans_dom = $('aside');
         $('.side-icon').click(function(e){
             e.stopPropagation();
             trans_dom.toggleClass('trans-show');
             if(trans_dom.hasClass('trans-show')){
-                $('.main.trans-show').on('click',function(event){
+                $('.main').on('click',function(event){
                     event.preventDefault();
                     $('.side-icon').click();
                 });
@@ -15,7 +15,7 @@
         });
 
         //$('.side-icon').click();
-        $('aside').height($('.main').height()>1050?$('.main').height():1050);
+        $('aside').height($('.main').height()>960?$('.main').height():1020);
 
         /****
          * jobcat select area

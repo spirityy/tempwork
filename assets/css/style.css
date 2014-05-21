@@ -1,14 +1,20 @@
+body {
+  position: relative; }
+
 aside {
+  -webkit-box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
   position: absolute;
+  z-index: 10;
   width: 420px;
   padding: 20px;
   min-height: 100%;
   background: #eaeaea;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-transform: translate(-460px, 0);
-  -ms-transform: translate(-460px, 0);
-  transform: translate(-460px, 0); }
+  -webkit-transform: translate(-480px, 0);
+  -ms-transform: translate(-480px, 0);
+  transform: translate(-480px, 0); }
   aside .aside-hd {
     margin-bottom: 20px; }
     aside .aside-hd:before, aside .aside-hd:after {
@@ -95,6 +101,10 @@ aside {
         font-size: 27px;
         color: #bababa; }
     aside .aside-main .aside-selectarea .jobcat-selected-options, aside .aside-main .aside-selectarea .area-selected-options {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      backface-visibility: hidden;
       display: none; }
       aside .aside-main .aside-selectarea .jobcat-selected-options li, aside .aside-main .aside-selectarea .area-selected-options li {
         width: 374px;
@@ -564,22 +574,13 @@ aside.trans-show {
 
 .main {
   padding-top: 83px;
-  z-index: 999;
-  min-height: 1000px;
+  z-index: 9;
+  min-height: 960px;
   width: 100%;
   position: absolute;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden; }
   .main .blank {
     height: 83px; }
-
-.main.trans-show {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-transform: translate(460px, 0);
-  -ms-transform: translate(460px, 0);
-  transform: translate(460px, 0); }
