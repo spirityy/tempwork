@@ -220,7 +220,7 @@
                                     <option value="">01</option>
                                     <option value="">02</option>
                                 </select>
-                                <input type="radio" class="tonow" value="tonow" name="tonow"/>至今
+                                <input type="checkbox" class="tonow" value="worktonowtonow" name="tworktonowonow"/>至今
                             </div>
                             <div class="row">
                                 <label for="companyname">公司名称：</label>
@@ -305,7 +305,7 @@
                                     <option value="">01</option>
                                     <option value="">02</option>
                                 </select>
-                                <input type="radio" class="tonow" value="tonow" name="tonow"/>至今
+                                <input type="checkbox" class="tonow" value="studytonow" name="studytonow"/>至今
                             </div>
                             <div class="row">
                                 <label for="study-schoolname">学校名称：</label>
@@ -365,7 +365,8 @@
                         <div class="row-more">
                             <a href="javascript:void(0);" class="add-more">继续添加</a>
                         </div>
-                        <div>
+                        <div class="skills-item-wrapper">
+                            <i class="del"></i>
                             <div class="row">
                                 <label for="skills-name">语言类别：</label>
                                 <input type="text" id="skills-name-type" name="skills-name" />
@@ -394,7 +395,7 @@
                         <i></i>
                     </div>
                     <div class="part-main">
-                        <div>
+                        <div class="product-item-wrapper">
                             <div class="row">
                                 <label for="product-start-year">开始时间：</label>
                                 <select id="product-start-year" name="product-start-year">
@@ -420,7 +421,7 @@
                                     <option value="">01</option>
                                     <option value="">02</option>
                                 </select>
-                                <input type="radio" class="tonow" value="tonow" name="tonow"/>至今
+                                <input type="checkbox" class="tonow" value="producttonow" name="producttonow"/>至今
                             </div>
                             <div class="row">
                                 <label for="productname">项目名称：</label>
@@ -474,7 +475,7 @@
 
     </div>
 
-    <!--<script src="http://10.31.17.197:8000/_/js/reloader.js"></script>-->
+    <script src="http://10.31.17.197:8000/_/js/reloader.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/handlebars-v1.3.0.js"></script>
     <script src="./assets/js/global.js"></script>
@@ -483,7 +484,12 @@
     <script>
 
         (function(){
-         var dom_trigger = $('section .title');
+
+
+             /*
+             *  展开 收缩
+             */
+             var dom_trigger = $('section .title');
              dom_trigger.click(function(){
                     $(this).toggleClass('expand');
                     $(this).find('i').toggleClass('up-arrow');
@@ -495,7 +501,35 @@
                        $(this).next('.part-main').slideDown(100);
                     }
                     
-             })
+             });
+
+
+
+
+             /*
+             * 添加删除 经历
+             */
+             var addmore_dom = $('.row-more a');
+
+             function AddDelEvent(el){
+                 $(el).find('.del').click(function(){
+                     if($(el).prev('div[class$=wrapper]').length === 0){
+                            alert('无法删除');
+                            return; 
+                     }
+                     $(el).fadeOut('fast',function(){
+                         $(this).remove();
+                     }); 
+                 }); 
+                 return el;
+             }
+             AddDelEvent($('div[class$=wrapper]'));
+
+             addmore_dom.click(function(e){
+                var clone_dom =$(this).parent('.row-more').prev('div[class$=wrapper]');
+                clone_dom.after(AddDelEvent(clone_dom.clone()).css('border-top','1px dashed #c7c7c7'));
+             });
+
 
         })()
     

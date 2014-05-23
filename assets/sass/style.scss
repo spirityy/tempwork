@@ -437,10 +437,12 @@ $resume-border-color:#c7c7c7;;
         }
         div[class$=wrapper]{
             position:relative;
+            margin:10px 0;
+            padding:10px 0;
             .del{
                 position:absolute;
                 right:5px;
-                top:0px;
+                top:10px;
                 width:20px;
                 height:20px;
                 background:url(../img/sprite.png) no-repeat 0 -580px;
@@ -451,7 +453,7 @@ $resume-border-color:#c7c7c7;;
             margin:10px; 
         }
         label{
-            width:140px;  
+            width:150px;
             line-height:58px;
             text-align:right;
             height:58px;
