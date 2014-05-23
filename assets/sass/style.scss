@@ -6,7 +6,7 @@ body{
 }
 aside{
     @include box-shadow(5px 0 20px rgba(0,0,0,.3));
-    position:absolute;
+    position:fixed;
     z-index:10;
     width:420px;
     padding:20px;
@@ -175,7 +175,7 @@ aside{
     }
 }
 
-section{
+section.index-list{
     .main-list{
         a:hover{
             text-decoration:none; 
@@ -524,7 +524,7 @@ $resume-border-color:#c7c7c7;;
             .add-more{ 
                 color:$resume-color;
                 padding-left:40px;
-                background:url(../img/sprite.png) no-repeat 0px -429px;
+                background:url(../img/sprite.png) no-repeat 0px -428px;
 
             }
         }

@@ -4,7 +4,7 @@ body {
 aside {
   -webkit-box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
-  position: absolute;
+  position: fixed;
   z-index: 10;
   width: 420px;
   padding: 20px;
@@ -164,25 +164,25 @@ aside {
       -o-border-radius: 5px;
       border-radius: 5px; }
 
-section .main-list a:hover {
+section.index-list .main-list a:hover {
   text-decoration: none; }
-  section .main-list a:hover .list-item {
+  section.index-list .main-list a:hover .list-item {
     background: #f0f0f0; }
-section .main-list .list-item {
+section.index-list .main-list .list-item {
   height: 175px;
   overflow: hidden;
   background: #fff;
   border-top: 1px solid #d1d1d1;
   padding: 20px 30px 20px 30px;
   font-size: 26px; }
-  section .main-list .list-item .item-hd {
+  section.index-list .main-list .list-item .item-hd {
     position: relative; }
-    section .main-list .list-item .item-hd h3 {
+    section.index-list .main-list .list-item .item-hd h3 {
       color: #3d3d3d;
       margin: 0;
       padding: 0;
       font-size: 36px; }
-    section .main-list .list-item .item-hd .detail {
+    section.index-list .main-list .list-item .item-hd .detail {
       position: absolute;
       display: block;
       width: 14px;
@@ -190,30 +190,30 @@ section .main-list .list-item {
       background: url(../img/sprite.png) no-repeat 0 -160px;
       right: 10px;
       top: 22px; }
-  section .main-list .list-item .item-options {
+  section.index-list .main-list .list-item .item-options {
     color: #ababab;
     font-size: 25px; }
-    section .main-list .list-item .item-options:before, section .main-list .list-item .item-options:after {
+    section.index-list .main-list .list-item .item-options:before, section.index-list .main-list .list-item .item-options:after {
       content: "";
       display: table; }
-    section .main-list .list-item .item-options:after {
+    section.index-list .main-list .list-item .item-options:after {
       clear: both; }
-    section .main-list .list-item .item-options ul {
+    section.index-list .main-list .list-item .item-options ul {
       width: 700px;
       overflow: hidden; }
-      section .main-list .list-item .item-options ul li {
+      section.index-list .main-list .list-item .item-options ul li {
         margin-right: 40px;
         float: left; }
-    section .main-list .list-item .item-options .addr-icon, section .main-list .list-item .item-options .people-icon, section .main-list .list-item .item-options .date-icon {
+    section.index-list .main-list .list-item .item-options .addr-icon, section.index-list .main-list .list-item .item-options .people-icon, section.index-list .main-list .list-item .item-options .date-icon {
       padding-left: 32px;
       background: url(../img/sprite.png) no-repeat; }
-    section .main-list .list-item .item-options .addr-icon {
+    section.index-list .main-list .list-item .item-options .addr-icon {
       background-position: 0 -44px; }
-    section .main-list .list-item .item-options .people-icon {
+    section.index-list .main-list .list-item .item-options .people-icon {
       background-position: 0 -83px; }
-    section .main-list .list-item .item-options .date-icon {
+    section.index-list .main-list .list-item .item-options .date-icon {
       background-position: 0 -113px; }
-  section .main-list .list-item .item-desc {
+  section.index-list .main-list .list-item .item-desc {
     color: #6d6d6d;
     font-size: 27px;
     height: 80px;
@@ -474,7 +474,7 @@ section.action {
       .resume section[class^=part] .row-more .add-more {
         color: #6e6e6e;
         padding-left: 40px;
-        background: url(../img/sprite.png) no-repeat 0px -429px; }
+        background: url(../img/sprite.png) no-repeat 0px -428px; }
     .resume section[class^=part] .row-action {
       height: 58px;
       line-height: 58px; }
