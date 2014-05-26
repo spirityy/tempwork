@@ -124,6 +124,7 @@
 
 
 <script type="text/x-handlebars-template" id="index-list-item">
+        <li>
             <a href="detail.html">
                 <div class="list-item">
                     <div class="item-hd">
@@ -142,6 +143,7 @@
                     </div>
                 </div>
             </a>
+        </li>
 </script>
 
 <!--<script src="http://10.31.17.197:8000/_/js/reloader.js"></script>-->
@@ -153,20 +155,50 @@
 <script>
 
 
-        var minidata = {
+        var minidata = [
+        {
             'title':'111',
             'city':'sh',
             'peoplenum':'10',
             'datetime':'2014.5',
             'desc':'aaaaaaaaaaaaaaaaaaaa'
-        };
+        },
+        {
+            'title':'111',
+            'city':'sh',
+            'peoplenum':'10',
+            'datetime':'2014.5',
+            'desc':'aaaaaaaaaaaaaaaaaaaa'
+        },
+        {
+            'title':'111',
+            'city':'sh',
+            'peoplenum':'10',
+            'datetime':'2014.5',
+            'desc':'aaaaaaaaaaaaaaaaaaaa'
+        },
+        {
+            'title':'111',
+            'city':'sh',
+            'peoplenum':'10',
+            'datetime':'2014.5',
+            'desc':'aaaaaaaaaaaaaaaaaaaa'
+        },
+        {
+            'title':'111',
+            'city':'sh',
+            'peoplenum':'10',
+            'datetime':'2014.5',
+            'desc':'aaaaaaaaaaaaaaaaaaaa'
+        }];
     
 
     (function(){
          $('.more a').click(function(){
                 //$(this).addClass('loading').html(''); 
-                $('.main-list').append(Handlebars.compile($('#index-list-item').html())(minidata));
-
+             $(minidata).each(function(k,i){
+                $('.main-list').append(Handlebars.compile($('#index-list-item').html())(i));
+             })
          });
 
      })()
