@@ -1,8 +1,14 @@
 @import "functions.scss";
 @import "animate.scss";
 
+@font-face {
+      font-family: 'lan';
+      src: url('../lan.ttf');
+}
+
 body{
     position:relative;
+    font-family:'lan';
 }
 aside{
     @include box-shadow(5px 0 20px rgba(0,0,0,.3));

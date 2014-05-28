@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'lan';
+  src: url("../lan.ttf"); }
+
 body {
-  position: relative; }
+  position: relative;
+  font-family: 'lan'; }
 
 aside {
   -webkit-box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
