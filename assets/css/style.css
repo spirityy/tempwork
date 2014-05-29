@@ -591,3 +591,24 @@ aside.trans-show {
   backface-visibility: hidden; }
   .main .blank {
     height: 83px; }
+
+/*
+ * upload   
+ */
+#take-pic, #take-video {
+  visibility: hidden;
+  height: 0; }
+
+#show-pic, #show-video {
+  width: 170px;
+  height: 200px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+#show-video {
+  width: 350px; }

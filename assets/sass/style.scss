@@ -649,3 +649,22 @@ aside.trans-show{
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+/*
+ * upload   
+ */
+#take-pic,#take-video{
+    visibility:hidden;
+    height:0;
+}
+
+#show-pic,#show-video{
+  width: 170px;
+  height: 200px;
+  border:1px solid #ddd;
+  cursor:pointer;
+  @include border-radius(3px);
+}
+#show-video{
+    width:350px;
+}
+
