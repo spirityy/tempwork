@@ -464,7 +464,9 @@
                                 <input type="file" accept="video/*" capture="camcorder" id="take-video" ></input>
                             </div>
                             <div class="row">
-                                <video autoplay id="show-video" src="" controls></video>
+                                <video id="show-video" width="640" height="320" src="../msd/assets/movie.ogg" controls>
+                                    <!--<source src="../msd/assets/movie.ogg" type="video/ogg">-->
+                                </video>
                             </div>
                             <div class="row">
                                 <textarea id="additional" name="additional" rows="7"></textarea>
@@ -488,10 +490,10 @@
     <script src="./assets/js/global.js"></script>
 
 
+
     <script>
 
         (function(){
-
 
              /*
              *  展开 收缩
@@ -553,9 +555,6 @@
                     takeVideo.click(); 
                 });
 
-
-
-
                 takeVideo.change(function(e){
 
                         var URL = window.URL || window.webkitURL;
@@ -564,21 +563,9 @@
 
                         $(showVideo).attr('src',videoURL);
             
-                        /*
-                        navigator.webkitGetUserMedia({audio: true, video: true},function(f){
-                            alert(f);
-                                    var URL = window.URL || window.webkitURL;
-                                    var videoURL = URL.createObjectURL(f);
-                                    $(showVideo).attr('src',videoURL);
-                            },function(){
-                                alert('false');
-                        });
-                        */
-
                         showVideo.off();
 
                 });
-
                 
                 /*
 
@@ -600,7 +587,6 @@
             }else{
                 alert('Not supported!');
             } 
-
 
              /*
              * 照片上传 
@@ -640,8 +626,6 @@
                     }
                 }
             };
-                    
-
                         
         })()
     
