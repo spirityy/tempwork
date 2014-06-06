@@ -508,6 +508,15 @@ section.action {
         border-radius: 5px; }
         .resume section[class^=part] .row-action .btn.center {
           left: 250px; }
+    .resume section[class^=part] .login-now {
+      display: block;
+      position: absolute;
+      height: 60px;
+      line-height: 60px;
+      margin-top: 10px;
+      color: #F0AC46;
+      left: 205px;
+      text-decoration: underline; }
     .resume section[class^=part][class=part-three] .part-main, .resume section[class^=part][class=part-four] .part-main, .resume section[class^=part][class=part-five] .part-main, .resume section[class^=part][class=part-six] .part-main, .resume section[class^=part][class=part-seven] .part-main, .resume section[class^=part][class=part-eight] .part-main {
       display: none; }
 
@@ -589,6 +598,11 @@ aside.trans-show {
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden; }
+  .main:before, .main:after {
+    content: "";
+    display: table; }
+  .main:after {
+    clear: both; }
   .main .blank {
     height: 83px; }
 
@@ -612,3 +626,32 @@ aside.trans-show {
 
 #show-video {
   width: 350px; }
+
+/*
+ * footer   
+ */
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 130px;
+  line-height: 130px;
+  background: #329ADD; }
+  footer ul {
+    position: relative; }
+    footer ul li {
+      width: 33%;
+      text-align: center;
+      font-size: 27px;
+      float: left; }
+      footer ul li.middle {
+        width: 34%; }
+      footer ul li a {
+        width: 100%;
+        display: inline-block;
+        height: 130px;
+        color: #fff; }
+        footer ul li a:hover {
+          background: #01609D;
+          color: #fff; }

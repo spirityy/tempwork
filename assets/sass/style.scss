@@ -557,6 +557,16 @@ $resume-border-color:#c7c7c7;;
                 }
             }
         }
+        .login-now{
+            display:block;
+            position:absolute;
+            height:60px;
+            line-height:60px;
+            margin-top:10px;
+            color:#F0AC46;
+            left:205px;
+            text-decoration:underline;
+        }
         &[class=part-three],&[class=part-four],&[class=part-five],&[class=part-six],&[class=part-seven],&[class=part-eight]{
             .part-main{
                 display:none; 
@@ -636,6 +646,7 @@ aside.trans-show{
     backface-visibility: hidden;
 }
 .main{
+    @include clearfix();
     padding-top:83px;
     z-index:9;
     min-height:960px;
@@ -667,4 +678,41 @@ aside.trans-show{
 #show-video{
     width:350px;
 }
+/*
+ * footer   
+ */
+
+footer{
+    width:100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:130px;
+    line-height:130px;
+    background:#329ADD;
+    ul{
+        position:relative; 
+        li{
+           width:33%;
+           text-align:center;
+           font-size:27px;
+           float:left;
+           &.middle{
+                width:34%; 
+           }
+           a{
+               width:100%;
+               display:inline-block;
+               height:130px;
+                color:#fff; 
+                &:hover{
+                    background:#01609D; 
+                    color:#fff;
+                }
+           }
+        }
+    }
+}
+
+
 
