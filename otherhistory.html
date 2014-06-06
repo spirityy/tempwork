@@ -61,10 +61,10 @@
 <div class="main">
     <header>
         <a href="javascript:void(0);" class="side-icon"></a>
-        近期热点招聘
+        推荐过的简历
     </header>
 
-    <section class="index-list">
+    <section class="index-list mylist">
         <ul class="main-list">
             <li>
             <a href="detail.html">
@@ -76,32 +76,8 @@
                     <div class="item-options">
                         <ul>
                             <li class="addr-icon">地点：安徽</li>
-                            <li class="people-icon">人数：若干</li>
-                            <li class="date-icon">日期：04-28</li>
+                            <li class="status-icon">状态：已提交</li>
                         </ul>
-                    </div>
-                    <div class="item-desc">
-                        工作职责：致力于通过专业的产品推广和学术交流，为医生提供具有价值的产品和治疗领域信息...
-                    </div>
-                </div>
-            </a>
-            </li>
-            <li>
-            <a href="detail.html">
-                <div class="list-item">
-                    <div class="item-hd">
-                        <h3>库存管理员</h3> 
-                        <i class="detail"></i>
-                    </div>
-                    <div class="item-options">
-                        <ul>
-                            <li class="addr-icon">地点：扬州</li>
-                            <li class="people-icon">人数：若干</li>
-                            <li class="date-icon">日期：04-28</li>
-                        </ul>
-                    </div>
-                    <div class="item-desc">
-                        工作职责：致力于通过专业的产品推广和学术交流，为医生提供具有价值的产品和治疗领域信息...
                     </div>
                 </div>
             </a>
@@ -143,12 +119,8 @@
                     <div class="item-options">
                         <ul>
                             <li class="addr-icon">地点：{{city}}</li>
-                            <li class="people-icon">人数：{{peoplenum}}</li>
-                            <li class="date-icon">日期：{{datetime}}</li>
+                            <li class="status-icon">状态：{{status}}</li>
                         </ul>
-                    </div>
-                    <div class="item-desc">
-                        {{desc}}
                     </div>
                 </div>
             </a>
@@ -167,38 +139,9 @@
         {
             'title':'111',
             'city':'sh',
-            'peoplenum':'10',
-            'datetime':'2014.5',
-            'desc':'aaaaaaaaaaaaaaaaaaaa'
-        },
-        {
-            'title':'111',
-            'city':'sh',
-            'peoplenum':'10',
-            'datetime':'2014.5',
-            'desc':'aaaaaaaaaaaaaaaaaaaa'
-        },
-        {
-            'title':'111',
-            'city':'sh',
-            'peoplenum':'10',
-            'datetime':'2014.5',
-            'desc':'aaaaaaaaaaaaaaaaaaaa'
-        },
-        {
-            'title':'111',
-            'city':'sh',
-            'peoplenum':'10',
-            'datetime':'2014.5',
-            'desc':'aaaaaaaaaaaaaaaaaaaa'
-        },
-        {
-            'title':'111',
-            'city':'sh',
-            'peoplenum':'10',
-            'datetime':'2014.5',
-            'desc':'aaaaaaaaaaaaaaaaaaaa'
-        }];
+            'status':'已提交',
+        }
+        ];
     
 
     (function(){
@@ -215,3 +158,4 @@
 
 </body>
 </html>
+

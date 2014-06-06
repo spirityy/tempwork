@@ -648,6 +648,7 @@ aside.trans-show{
 .main{
     @include clearfix();
     padding-top:83px;
+    padding-bottom:130px;
     z-index:9;
     min-height:960px;
     width:100%;
@@ -685,6 +686,7 @@ aside.trans-show{
 footer{
     width:100%;
     position:fixed;
+    z-index:9998;
     bottom:0;
     left:0;
     height:130px;
