@@ -508,15 +508,52 @@ section.action {
         border-radius: 5px; }
         .resume section[class^=part] .row-action .btn.center {
           left: 250px; }
-    .resume section[class^=part] .login-now {
-      display: block;
-      position: absolute;
+    .resume section[class^=part] .login-now, .resume section[class^=part] .back-register, .resume section[class^=part] .forget-pwd {
+      display: inline-block;
       height: 60px;
       line-height: 60px;
       margin-top: 10px;
       color: #F0AC46;
-      left: 205px;
       text-decoration: underline; }
+      .resume section[class^=part] .login-now.login-now, .resume section[class^=part] .back-register.login-now, .resume section[class^=part] .forget-pwd.login-now {
+        position: absolute;
+        left: 205px; }
+    .resume section[class^=part] .login-mod .row {
+      position: relative; }
+    .resume section[class^=part] .login-btn {
+      width: 100%;
+      background: #3397da;
+      color: #fff;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      border: none;
+      height: 58px;
+      width: 508px;
+      margin-left: 10px; }
+    .resume section[class^=part] #login-pwd, .resume section[class^=part] #login-phone-num {
+      padding-left: 70px;
+      width: 425px; }
+    .resume section[class^=part] .user-icon, .resume section[class^=part] .pwd-icon {
+      position: absolute;
+      left: 0;
+      background: url(../img/sprite.png) no-repeat #babbbb;
+      height: 60px;
+      width: 60px;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-border-bottom-left-radius: 5px;
+      -moz-border-radius-bottomleft: 5px;
+      border-bottom-left-radius: 5px;
+      webkit-border-top-left-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      border-top-left-radius: 5px; }
+      .resume section[class^=part] .user-icon.user-icon, .resume section[class^=part] .pwd-icon.user-icon {
+        background-position: -36px -608px; }
+      .resume section[class^=part] .user-icon.pwd-icon, .resume section[class^=part] .pwd-icon.pwd-icon {
+        background-position: 18px -608px; }
     .resume section[class^=part][class=part-three] .part-main, .resume section[class^=part][class=part-four] .part-main, .resume section[class^=part][class=part-five] .part-main, .resume section[class^=part][class=part-six] .part-main, .resume section[class^=part][class=part-seven] .part-main, .resume section[class^=part][class=part-eight] .part-main {
       display: none; }
 
@@ -590,7 +627,6 @@ aside.trans-show {
 
 .main {
   padding-top: 83px;
-  padding-bottom: 130px;
   z-index: 9;
   min-height: 960px;
   width: 100%;

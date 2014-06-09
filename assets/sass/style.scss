@@ -557,15 +557,57 @@ $resume-border-color:#c7c7c7;;
                 }
             }
         }
-        .login-now{
-            display:block;
-            position:absolute;
+        .login-now,.back-register,.forget-pwd{
+            display:inline-block;
             height:60px;
             line-height:60px;
             margin-top:10px;
             color:#F0AC46;
-            left:205px;
             text-decoration:underline;
+            &.login-now{
+                position:absolute;
+                left:205px;
+            }
+        }
+        .login-mod{
+            .row{
+                position:relative; 
+            } 
+        }
+        .login-btn{
+            width:100%; 
+            background:$themecolor;
+            color:#fff;
+            @include border-radius(5px);
+            border:none; 
+            height:58px;
+            width:508px;
+            margin-left:10px;
+        }
+        #login-pwd,#login-phone-num{
+            padding-left:70px; 
+            width:425px;
+        }
+        .user-icon,.pwd-icon{
+            position:absolute;
+            left:0;
+            background:url(../img/sprite.png) no-repeat #babbbb;
+            height:60px; 
+            width:60px;
+            display:inline-block;
+            vertical-align:middle;
+            -webkit-border-bottom-left-radius: 5px;
+            -moz-border-radius-bottomleft: 5px;
+            border-bottom-left-radius: 5px; 
+            webkit-border-top-left-radius: 5px;
+            -moz-border-radius-topleft: 5px;
+            border-top-left-radius: 5px; 
+            &.user-icon{
+                background-position:-36px -608px; 
+            }
+            &.pwd-icon{
+                background-position:18px -608px;
+            }
         }
         &[class=part-three],&[class=part-four],&[class=part-five],&[class=part-six],&[class=part-seven],&[class=part-eight]{
             .part-main{
@@ -648,7 +690,6 @@ aside.trans-show{
 .main{
     @include clearfix();
     padding-top:83px;
-    padding-bottom:130px;
     z-index:9;
     min-height:960px;
     width:100%;
